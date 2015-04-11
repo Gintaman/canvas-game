@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+</head>
+<body>
+	<canvas id="canvas" width="400" height="400"></canvas>
+	<script src="Engine.js"></script>
+	<script>
+		var canvas = document.querySelector("#canvas");
+		var cx = canvas.getContext("2d");
+		ParticleModule.initialize({
+			x: canvas.width / 2,
+			y: canvas.height / 2,
+			width: canvas.width,
+			height: canvas.height,
+			particleNum: 2,
+			type: "explosion"
+		}, cx);
+	</script>
+</body>
+</html>
